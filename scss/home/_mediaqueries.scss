@@ -1,0 +1,18 @@
+@use '../partials/tools' as *;
+@use '../partials/assembler/' as *;
+
+// ----------------------
+/* mediaqueries */
+// ----------------------
+
+// @include mQdefault__max-width(250px) {
+//     :root {
+//         --font-size: #{$font-size-90};
+//     }
+//     .content {
+//         padding-inline: em(16, 14.4);
+//     }
+// }
+
+// @include mQdefault__min-width(750px) {}
+   
