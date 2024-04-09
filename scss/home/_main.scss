@@ -103,6 +103,7 @@ p {
         width: em(25, 16);
         aspect-ratio: 1/1;
         opacity: 0;
+        cursor: pointer;
 
         &:checked + * {
             background-image: url(../assets/img/icon-minus.svg);
@@ -113,11 +114,10 @@ p {
     }
 
     .checkbox--button {
+        position: absolute;
         transition: background-image ease-in-out 0.2s;
         right: 0;
-        position: absolute;
         z-index: -1;
-        cursor: pointer;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: auto;
