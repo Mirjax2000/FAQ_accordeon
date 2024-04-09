@@ -449,6 +449,8 @@ p {
   background-image: url(../assets/img/icon-plus.svg);
 }
 .card__list__wrapper .checkbox--button {
+  -webkit-transition: background-image ease-in-out 0.2s;
+  transition: background-image ease-in-out 0.2s;
   right: 0;
   position: absolute;
   z-index: -1;

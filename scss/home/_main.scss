@@ -72,9 +72,9 @@ h1 {
     color: $clr-txt-H1;
 }
 h2 {
-    @extend %weight-600;
     font-size: var(--H2); //16
     line-height: em(19, 16);
+    @extend %weight-600;
     color: $clr-txt-H2;
 }
 p {
@@ -102,8 +102,8 @@ p {
         z-index: 100;
         width: em(25, 16);
         aspect-ratio: 1/1;
-
         opacity: 0;
+
         &:checked + * {
             background-image: url(../assets/img/icon-minus.svg);
         }
@@ -113,6 +113,7 @@ p {
     }
 
     .checkbox--button {
+        transition: background-image ease-in-out 0.2s;
         right: 0;
         position: absolute;
         z-index: -1;
