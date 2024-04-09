@@ -7,13 +7,13 @@ $debug: false;
 
 // --- color pallete ---
 $clr10: #ffffff;
-$clr11: #9341c8;
-$clr12: #eee5f4;
-$clr13: #3e2753;
-$clr14: #6e5d7e;
+$clr11: #301534;
+$clr12: #ad28eb;
+$clr13: #f8eeff;
+$clr14: #8b6990;
 $clr15: #e472ff;
-$clr16: #3e275340;
-$clr17: #a39da9;
+$clr16: #1e1e1e;
+$clr17: #8b6991;
 $clr18: #c5c9cc;
 $clr19: #d99eff;
 $clr20: #f5f3f7;
@@ -24,18 +24,16 @@ $clr99: #808080;
 
 // font color
 // text H1
-$clr-txt-H1: $clr13;
+$clr-txt-H1: $clr11;
 
 // text H2
-$clr-txt-H2: $clr13;
-$clr-txt-H2--footer: $clr17;
+$clr-txt-H2: $clr11;
 
 // text H3
 $clr-txt-H3--header: $clr10;
 
 // text par
-$clr-txt-par: $clr17;
-$clr-txt-par--header: $clr19;
+$clr-txt-par: $clr14;
 
 // text chat li left
 $chat__li--left: $clr11;
@@ -43,11 +41,11 @@ $chat__li--right: $clr14;
 // -------------------------
 
 // backround color
-$clr-bg-body: $clr99;
+$clr-bg-body: $clr16;
 
-$clr-bg-phone: $clr10;
+$clr-bg-container: $clr13;
 
-$clr-bg-phone__wraper: $clr20;
+$clr-bg-card: $clr10;
 
 $clr-bg-chat-li: $clr12;
 
@@ -80,6 +78,7 @@ $font-family-Montserrat: Montserrat, serif;
 $font-family-Fraunces: Fraunces, serif;
 $font-family-Poppins: Poppins, sans-serif;
 $font-family-Rubik: Rubik, sans-serif;
+$font-family-WorkSans: 'Work Sans', sans-serif;
 $font-family-RedHatDisplay: 'Red hat display', sans-serif;
 $font-family-Barlow-semiCon: 'Barlow_semi_condensed', sans-serif;
 
@@ -89,7 +88,7 @@ $font-family-systemUI: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
 // -------------------------------
 
 // --- border-radius ---
-$br-phone: 30;
+$br-card: 8;
 $br-phone__wrapper: 20;
 $br-btn: 29;
 // ----------------------
@@ -121,21 +120,21 @@ $font-size-90: 90%;
 $font-size-80: 80%;
 // --------------------------------
 // font-sizes
-$H1--Mob: rem(40, 0);
+$H1--Mob: rem(32, 0);
 $H1--Tbt: rem(48, 0);
-$H1--PC: rem(64, 0);
+$H1--PC: rem(56, 0);
 
-$H2--Mob: rem(32, 0);
-$H2--Tbt: rem(40, 0);
-$H2--PC: rem(40, 0);
+$H2--Mob: rem(16, 0);
+$H2--Tbt: rem(18, 0);
+$H2--PC: rem(18, 0);
 
 $H3--Mob: rem(11, 0);
 $H3--Tbt: rem(16, 0);
 $H3--PC: rem(16, 0);
 
-$par--Mob: rem(16, 0);
+$par--Mob: rem(14, 0);
 $par--Tbt: rem(16, 0);
-$par--PC: rem(18, 0);
+$par--PC: rem(16, 0);
 
 $par__header--Mob: rem(8, 0);
 $par__header--Tbt: rem(16, 0);
@@ -157,7 +156,11 @@ $Placeholder--Mob: rem(9, 0);
 $Placeholder--Tbt: rem(9, 0);
 $Placeholder--PC: rem(9, 0);
 
+// width
+$cont__width--Mob: rem(375, 0);
+$cont__width--PC: rem(1440, 0);
 // --------------------------------
+
 $pages: home, gallery, blog, contact, buttons;
 
 // icon colors

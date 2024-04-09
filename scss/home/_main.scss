@@ -8,5 +8,120 @@
 .home {
     font-optical-sizing: auto;
     background-color: $clr-bg-body;
-    font-family: $font-family-systemUI;
+    font-family: $font-family-WorkSans;
+}
+
+.container {
+    max-width: var(--container);
+    min-width: em(200, 16);
+    min-height: 100svh;
+    @extend %autoMargin;
+    background-color: $clr-bg-container;
+    padding-inline: em(24, 16);
+    padding-block: em(143, 16);
+
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        min-height: em(232, 16);
+        background-image: url(../assets/img/background-pattern-mobile.svg);
+        z-index: 1;
+    }
+}
+
+.card {
+    position: relative;
+    background-color: $clr-bg-card;
+    padding: em(24, 16);
+    border-radius: em($br-card, 16);
+    box-shadow: 0px 32px 56px rgba(80, 0, 118, 0.1);
+    z-index: 10;
+    &__header {
+        display: flex;
+        gap: em(9, 16);
+        margin-bottom: em(24, 16);
+        img {
+            background-color: $clr-bg-card;
+        }
+    }
+    &__list {
+        li {
+            border-bottom: 1px solid $clr13;
+            padding-block: em(20, 16);
+        }
+
+        & li:first-child {
+            padding-top: 0;
+        }
+
+        & li:last-child {
+            border: none;
+            padding-bottom: 0;
+        }
+    }
+}
+
+h1 {
+    font-size: var(--H1); //32
+    line-height: em(38, 32);
+    @extend %weight-700;
+    color: $clr-txt-H1;
+}
+h2 {
+    @extend %weight-600;
+    font-size: var(--H2); //16
+    line-height: em(19, 16);
+    color: $clr-txt-H2;
+}
+p {
+    font-size: var(--par); //14
+    line-height: em(21, 14);
+    @extend %weight-400;
+    color: $clr-txt-par;
+    padding-top: em(24, 14);
+}
+
+.card__list__wrapper {
+    isolation: isolate;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 50;
+
+    h2 {
+        flex-basis: 80%;
+    }
+
+    .checkbox {
+        position: relative;
+        z-index: 100;
+        width: em(25, 16);
+        aspect-ratio: 1/1;
+
+        opacity: 0;
+        &:checked + * {
+            background-image: url(../assets/img/icon-minus.svg);
+        }
+        &:not(:checked) + * {
+            background-image: url(../assets/img/icon-plus.svg);
+        }
+    }
+
+    .checkbox--button {
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: auto;
+
+        width: em(25, 16);
+        aspect-ratio: 1/1;
+    }
 }

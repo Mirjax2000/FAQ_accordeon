@@ -198,10 +198,35 @@
 //         url(../assets/webfonts/Font-face/Rubik-Regular.ttf) format('truetype');
 //     font-weight: 400;
 // }
-// // Rubik - 700
+// Rubik - 700
 // @font-face {
 //     font-family: 'Rubik';
 //     src: url(../assets/webfonts/Font-face/Rubik-Bold.woff2) format('woff2'),
 //         url(../assets/webfonts/Font-face/Rubik-Bold.ttf) format('truetype');
 //     font-weight: 700;
 // }
+// WorkSans - 700
+@font-face {
+    font-family: 'Work Sans';
+    src: url(../assets/webfonts/Font-face/WorkSans-Bold.woff2) format('woff2'),
+        url(../assets/webfonts/Font-face/WorkSans-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+// WorkSans - 600
+@font-face {
+    font-family: 'Work Sans';
+    src: url(../assets/webfonts/Font-face/WorkSans-SemiBold.woff2)
+            format('woff2'),
+        url(../assets/webfonts/Font-face/WorkSans-SemiBold.ttf)
+            format('truetype');
+    font-weight: 600;
+}
+// WorkSans - 400
+@font-face {
+    font-family: 'Work Sans';
+    src: url(../assets/webfonts/Font-face/WorkSans-Regular.woff2)
+            format('woff2'),
+        url(../assets/webfonts/Font-face/WorkSans-Regular.ttf)
+            format('truetype');
+    font-weight: 400;
+}
